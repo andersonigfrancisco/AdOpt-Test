@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "AdOpt-Test",
-    "description": "Documentation from AdOpt Time <br><br> https://github.com/andersonigfrancisco <br><br> repository: https://github.com/andersonigfrancisco"
+    "description": "Documentation from AdOpt Time <br><br> https://github.com/andersonigfrancisco <br><br> repository: https://github.com/andersonigfrancisco/AdOpt-Test"
   },
   "host": "localhost:3000",
   "basePath": "/",
