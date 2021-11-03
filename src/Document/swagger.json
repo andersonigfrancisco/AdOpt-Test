@@ -34,6 +34,41 @@
     "application/json"
   ],
   "paths": {
+    "/login": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties":{
+              "email":{
+                "type":"string"
+              },
+              "password":{
+                "type":"string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500":{
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/list-format": {
       "get": {
         "tags": [],

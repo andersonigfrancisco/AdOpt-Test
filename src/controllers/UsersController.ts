@@ -32,6 +32,7 @@ class UsersController
 
     const user = await createUserService.list();
 
+
     return response.json(user);
   }
 

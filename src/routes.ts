@@ -5,10 +5,12 @@ import {FormatController} from './controllers/FormatController';
 import {FlavorController} from './controllers/FlavorController';
 import {CookiesController} from './controllers/CookiesController';
 import {PotsController} from './controllers/PotsController';
+import {AuthenticateUserController} from './controllers/AuthenticateUserController';
 
 const router = Router();
 
 const userController = new UsersController();
+const authenticateUserController = new AuthenticateUserController();
 const formatController = new FormatController();
 const flavorController = new FlavorController();
 
@@ -21,6 +23,7 @@ router.get("/list-user",userController.list);
 router.post("/create-user",userController.handle);
 router.delete("/delete-user",userController.delete);
 router.delete("/update-user",userController.update);
+router.post("/login",authenticateUserController.handle)
 
 router.get("/list-format",formatController.list);
 router.post("/create-format",formatController.handle);

@@ -46,7 +46,7 @@ class PotsServices
     const PotsRepository = getCustomRepository(PotsRepositories);
 
     const pots = await PotsRepository.find({
-      relations:["cookie"]
+      relations:["cookies","Flavor"]
     });
 
     if(!pots)

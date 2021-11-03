@@ -8,9 +8,9 @@ export class Pots1635853134739 implements MigrationInterface {
               name: "Pots",
               columns:[
                   {
-                      name: "id",
-                      type: "varchar",
-                      isPrimary:true,
+                    name: "id",
+                    type: "varchar",
+                    isPrimary:true,
                   },
                   {
                     name: "name",
@@ -40,14 +40,14 @@ export class Pots1635853134739 implements MigrationInterface {
                   }
               ],
               foreignKeys:[
-                  {
-                    name: "FKFCookiesPots",
-                    referencedTableName:"Cookies",
-                    referencedColumnNames:["id"],
-                    columnNames:["Cookie_id"],
-                    onDelete:"SET DEFAULT",
-                    onUpdate:"SET DEFAULT"
-                  }
+                {
+                  name: "FKFCookiesPots",
+                  referencedTableName:"Cookies",
+                  referencedColumnNames:["id"],
+                  columnNames:["Cookie_id"],
+                  onDelete:"SET DEFAULT",
+                  onUpdate:"SET DEFAULT"
+                }
               ]
             })
         )

@@ -1,8 +1,7 @@
 import { Entity,PrimaryColumn,Column,CreateDateColumn,UpdateDateColumn,JoinColumn,ManyToOne,ManyToMany } from "typeorm";
 import {v4 as uuid} from 'uuid';
 
-
-import {Cookies} from './Cookies'
+import {Cookies} from './Cookies';
 
 @Entity("Pots")
 
@@ -18,14 +17,16 @@ class Pots
   @Column()
   quantity : number;
 
+
+
   @Column()
   Cookie_id : string;
 
   @JoinColumn({name: "Cookie_id"})
   @ManyToOne(()=>Cookies)
-  cookie:Cookies
+  cookies:Cookies
 
-
+  
   @Column()
   descrition : string;
 
