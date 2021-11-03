@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   app:
-    container_name: libongo-middleware-api
+    container_name: AdOptTest-api
     restart: always
     build:
       context: .
